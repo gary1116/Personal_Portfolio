@@ -464,11 +464,6 @@ export const navbarData = [
     name: 'Projects',
     icon: <ProjectorLineIcon />,
   },
-  {
-    id: 'contact',
-    name: 'Contact',
-    icon: <ContactsBook2LineIcon />,
-  },
 ]
 
 // Toggle
