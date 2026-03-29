@@ -7,10 +7,22 @@ import GithubLineIcon from 'remixicon-react/GithubLineIcon'
 import LinkedinBoxLineIcon from 'remixicon-react/LinkedinBoxLineIcon'
 /* eslint-disable react/jsx-key */
 export const heroIcons = [
-  <InstagramLineIcon />,
-  <FacebookCircleLineIcon />,
-  <GithubLineIcon />,
-  <LinkedinBoxLineIcon />,
+  {
+    icon: InstagramLineIcon,
+    url: 'https://www.instagram.com/_gary_m/',
+  },
+  {
+    icon: FacebookCircleLineIcon,
+    url: 'https://www.facebook.com/gary.meledath',
+  },
+  {
+    icon: GithubLineIcon,
+    url: 'https://github.com/gary1116',
+  },
+  {
+    icon: LinkedinBoxLineIcon,
+    url: 'https://linkedin.com/in/gary-m-100bb01aa',
+  },
 ]
 
 // About Me

@@ -80,15 +80,21 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl"
         >
-          {heroIcons.map((icon, i) => (
-            <a
-              href="#"
-              key={i}
-              className="rounded-lg hover:bg-red-400 hover:text-white transition-colors"
-            >
-              {icon}
-            </a>
-          ))}
+          {heroIcons.map((item, i) => {
+            const Icon = item.icon
+
+            return (
+              <a
+                href={item.url}
+                key={i}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg p-2 hover:bg-red-400 hover:text-white transition-colors"
+              >
+                <Icon />
+              </a>
+            )
+          })}
         </motion.div>
 
       </div>
