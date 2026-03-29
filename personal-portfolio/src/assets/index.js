@@ -160,10 +160,6 @@ export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
 export const galleryData = [
-  { image: '/gallery/homies.jpeg' },
-  { image: '/gallery/train.jpeg' },
-  { image: '/gallery/team.jpeg' },
-  { image: '/gallery/goa.jpg' },
   { image: '/gallery/IMG_1.JPG' },
   { image: '/gallery/IMG_2.JPG' },
   { image: '/gallery/IMG_3.JPG' },
@@ -179,6 +175,11 @@ export const galleryData = [
   { image: '/gallery/IMG_13.jpg' },
   { image: '/gallery/IMG_14.jpg' },
   { image: '/gallery/IMG_15.JPG' },
+  { image: '/gallery/IMG_16.JPG' },
+  { image: '/gallery/IMG_17.JPG' },
+  { image: '/gallery/IMG_18.JPG' },
+  { image: '/gallery/IMG_19.JPG' },
+
 ]
 
 // Projects
