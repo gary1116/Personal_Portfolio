@@ -6,9 +6,9 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Navbar from '@/components/Navbar'
 import Toggle from '@/components/sub/Toggle'
+import Gallery from '@/components/Gallery'
 import Load from '@/components/sub/Load'
 import { useState, useRef, useEffect } from 'react'
-import Reviews from '@/components/Reviews'
 
 export default function Home() {
   const [id, setId] = useState(0)
@@ -42,7 +42,7 @@ export default function Home() {
           <About />
           <Experience />
           <Skills />
-          <Reviews />
+          <Gallery />
           <Projects />
         </div>
       </Toggle>

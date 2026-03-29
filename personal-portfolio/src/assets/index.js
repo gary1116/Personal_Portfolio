@@ -1,8 +1,6 @@
 // Hero
 import InstagramLineIcon from 'remixicon-react/InstagramLineIcon'
 import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon'
-import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
-import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
 import GithubLineIcon from 'remixicon-react/GithubLineIcon'
 import LinkedinBoxLineIcon from 'remixicon-react/LinkedinBoxLineIcon'
 /* eslint-disable react/jsx-key */
@@ -25,34 +23,8 @@ export const heroIcons = [
   },
 ]
 
-// About Me
-import GithubFillIcon from 'remixicon-react/GithubFillIcon'
-import Projector2LineIcon from 'remixicon-react/Projector2LineIcon'
-import GroupLineIcon from 'remixicon-react/GroupLineIcon'
-import AwardFillIcon from 'remixicon-react/AwardFillIcon'
 
-export const aboutData = [
-  {
-    title: 'Github Repos',
-    amount: 348,
-    icon: <GithubFillIcon />,
-  },
-  {
-    title: 'Successful Projects',
-    amount: 227,
-    icon: <Projector2LineIcon />,
-  },
-  {
-    title: 'Satisfied clients',
-    amount: 176,
-    icon: <GroupLineIcon />,
-  },
-  {
-    title: 'Awards and Recognition',
-    amount: 107,
-    icon: <AwardFillIcon />,
-  },
-]
+
 
 import DownloadLineIcon from 'remixicon-react/DownloadLineIcon'
 import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon'
@@ -187,42 +159,26 @@ import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
 export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
-export const reviewsData = [
-  {
-    image: '/reviews/client-4.png',
-    name: 'Mark T., Freelance Graphic Designer',
-    comment:
-      "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
-    stars: [1, 1, 1, 1, 0.5],
-  },
-  {
-    image: '/reviews/client-2.png',
-    name: 'Sarah B., E-commerce Store Owner',
-    comment:
-      "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
-    stars: [1, 1, 1, 1, 1],
-  },
-  {
-    image: '/reviews/client-3.png',
-    name: 'Emily R., CEO of Tech Startup',
-    comment:
-      "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
-    stars: [1, 1, 1, 1, 1],
-  },
-  {
-    image: '/reviews/client-1.png',
-    name: 'Bob W., Lifestyle Blogger',
-    comment:
-      "I absolutely love the blog design you created for me, [Web Designer's Name]. It's exactly what I envisioned—stylish, unique, and easy to navigate. Your responsiveness and creative input were invaluable. My readers are raving about the new look, and I couldn't be more thrilled!",
-    stars: [1, 1, 1, 1, 0.5],
-  },
-  {
-    image: '/reviews/client-5.png',
-    name: 'David H., Director of Non-Profit Organization',
-    comment:
-      "your work on our non-profit’s website has been transformative. The design is clean, engaging, and effectively conveys our mission. We've seen an increase in online donations and volunteer sign-ups, all thanks to your fantastic design. Your dedication and talent are greatly appreciated!",
-    stars: [1, 1, 1, 1, 1],
-  },
+export const galleryData = [
+  { image: '/gallery/homies.jpeg' },
+  { image: '/gallery/train.jpeg' },
+  { image: '/gallery/team.jpeg' },
+  { image: '/gallery/IMG_8.jpg' },
+  { image: '/gallery/IMG_1.JPG' },
+  { image: '/gallery/IMG_2.JPG' },
+  { image: '/gallery/IMG_3.JPG' },
+  { image: '/gallery/IMG_4.JPG' },
+  { image: '/gallery/IMG_5.jpg' },
+  { image: '/gallery/IMG_6.jpg' },
+  { image: '/gallery/IMG_7.jpg' },
+  { image: '/gallery/IMG_9.jpg' },
+  { image: '/gallery/IMG_10.JPG' },
+  { image: '/gallery/IMG_11.jpg' },
+  { image: '/gallery/IMG_12.JPG' },
+  { image: '/gallery/IMG_13.jpg' },
+  { image: '/gallery/IMG_14.jpg' },
+  { image: '/gallery/IMG_15.jpg' },
+  { image: '/gallery/IMG_16.JPG' },
 ]
 
 // Projects
@@ -232,18 +188,21 @@ export const projectsData = [
     desc: 'A web application that converts audio files into text using OpenAI APIs. Supports audio upload, real-time transcription, and clean display of results with proper error handling and loading states.',
     url: '/projects/image-1.jpg',
     tech: ['React', 'Spring Boot', 'OpenAI API', 'Java'],
+    github: 'https://github.com/gary1116/Audio-Transcriber',
   },
   {
     name: 'Spring AI Lab',
     desc: 'A multi-feature AI application built using Spring Boot that includes chat functionality, a recipe generator, and an image generation tool using AI APIs. Demonstrates integration of multiple AI services in a single platform.',
     url: '/projects/image-2.jpg',
     tech: ['Spring Boot', 'Java', 'React', 'OpenAI API'],
+    github: 'https://github.com/gary1116/spring-ai-lab',
   },
   {
     name: 'SB E-Commerce Backend',
     desc: 'A backend application for an e-commerce platform built using Spring Boot, providing RESTful APIs for product management, cart operations, and order processing. Tested using Postman and integrated with a relational database.',
     url: '/projects/image-3.jpg',
     tech: ['Java', 'Spring Boot', 'JPA', 'Hibernate', 'MySQL'],
+    github: 'https://github.com/gary1116/sb-ecom',
   },
 ];
 
@@ -265,7 +224,7 @@ import Home5LineIcon from 'remixicon-react/Home5LineIcon'
 import UserLineIcon from 'remixicon-react/UserLineIcon'
 import HistoryLineIcon from 'remixicon-react/HistoryLineIcon'
 import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon'
-import UserStarLineIcon from 'remixicon-react/UserStarLineIcon'
+import HeartFillIcon from 'remixicon-react/HeartFillIcon'
 import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon'
 
 export const navbarData = [
@@ -290,9 +249,9 @@ export const navbarData = [
     icon: <BriefcaseLineIcon />,
   },
   {
-    id: 'reviews',
-    name: 'Reviews',
-    icon: <UserStarLineIcon />,
+    id: 'gallery',
+    name: 'Gallery',
+    icon: <HeartFillIcon />,
   },
   {
     id: 'projects',
