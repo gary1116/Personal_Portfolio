@@ -9,8 +9,6 @@ import LinkedinBoxLineIcon from 'remixicon-react/LinkedinBoxLineIcon'
 export const heroIcons = [
   <InstagramLineIcon />,
   <FacebookCircleLineIcon />,
-  <DribbbleLineIcon />,
-  <YoutubeLineIcon />,
   <GithubLineIcon />,
   <LinkedinBoxLineIcon />,
 ]
