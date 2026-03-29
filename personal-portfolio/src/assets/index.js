@@ -4,7 +4,7 @@ import FacebookCircleLineIcon from 'remixicon-react/FacebookCircleLineIcon'
 import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
 import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
 import GithubLineIcon from 'remixicon-react/GithubLineIcon'
-
+import LinkedinBoxLineIcon from 'remixicon-react/LinkedinBoxLineIcon'
 /* eslint-disable react/jsx-key */
 export const heroIcons = [
   <InstagramLineIcon />,
@@ -12,6 +12,7 @@ export const heroIcons = [
   <DribbbleLineIcon />,
   <YoutubeLineIcon />,
   <GithubLineIcon />,
+  <LinkedinBoxLineIcon />,
 ]
 
 // About Me
@@ -49,75 +50,76 @@ import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon'
 export const downloadIcon = <DownloadLineIcon />
 export const arrowLeftIcon = <ArrowLeftSFillIcon />
 
-export const aboutText =
-  " Hi, I'm Nick, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience."
+export const aboutText = [
+  "I’m a software developer with experience in building full-stack applications using Java, Spring Boot, and React. I enjoy working on real-world projects and have recently been exploring AI-based applications, integrating APIs to create intelligent and practical solutions.",
+
+  "I’m passionate about continuously improving my skills, whether it’s mastering backend development, building responsive user interfaces, or solving problems through code. I believe in learning by building, which is why I focus on creating projects that reflect real-world use cases.",
+
+  "Outside of coding, I love travelling and exploring new places. It helps me stay curious, refreshed, and inspired—both in life and in the way I approach technology."
+];
 // End of About Me
 
 // Experience
 export const experienceData = [
   {
-    year: 1,
-    title: 'Foundation and Basics',
+    year: 2018,
+    title: 'Started Engineering in Computer Science',
     education:
-      'High School Diploma: Focus on computer science, mathematics, and art/design courses.',
+      'B.E. in Computer Science, Fr. C. Rodrigues Institute of Technology, Vashi, Navi Mumbai.',
     experience: [
-      'Basic HTML/CSS: Learn through online tutorials and courses.',
-      'Personal Projects: Create simple personal websites or blogs.',
+      'Built a strong foundation in programming, data structures, and core computer science concepts.',
     ],
   },
   {
-    year: 2,
-    title: 'Advanced Learning and Early Experience',
+    year: 2022,
+    title: 'Graduation',
     education:
-      'Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.',
+      'Graduated with a CGPA of 7.4 from Fr. C. Rodrigues Institute of Technology.',
     experience: [
-      'Freelance Work: Take on small freelance projects to build a portfolio.',
-      'Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.',
+      'Gained academic knowledge in software development and problem-solving.',
     ],
   },
   {
-    year: 3,
-    title: 'Specialized Education and Real-World Application',
+    year: 2022,
+    title: 'Joined Accenture as Associate Software Engineer',
     education:
-      'Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).',
+      'Started professional career with Accenture in November 2022.',
     experience: [
-      'Internships: Secure internships with tech companies or design agencies.',
-      'Contribute to Open Source: Collaborate on open-source projects.',
+      'Completed training in Java Full Stack development.',
+      'Learned core technologies including Java, Spring Boot, and React.',
     ],
   },
   {
-    year: 4,
-    title: 'Building Expertise and Expanding Skills',
-    education: 'Certifications: Obtain certifications in advanced web technologies.',
+    year: 2023,
+    title: 'Started Working on Client Projects',
+    education:
+      'Completed training by February 2023 and began working on real-world projects.',
     experience: [
-      'Full-Time Position: Work as a junior web developer or designer.',
-      'Portfolio Development: Continuously update your portfolio with professional and personal projects.',
+      'Worked on enterprise-level applications.',
+      'Gained hands-on experience in Java, Spring Boot, and frontend development.',
     ],
   },
   {
-    year: 5,
-    title: 'Mastery and Leadership',
-    education: 'Workshops and Conferences: Attend industry events to stay updated.',
+    year: 2024,
+    title: 'Promoted to Software Engineer / Analyst',
+    education:
+      'Promoted in November 2024 at Accenture.',
     experience: [
-      'Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.',
-      'Freelance and Consulting: Consider starting a freelance business or consulting practice.',
+      'Worked on multiple projects involving React and Spring Boot.',
+      'Improved skills in full-stack development and real-world problem solving.',
     ],
   },
-]
+];
 
 // Skills
 export const skillsData = [
   {
-    name: 'Figma',
-    icon: '/skills/figma.png',
+    name: 'Springboot',
+    icon: '/skills/springboot.png',
   },
   {
-    name: 'Photoshop',
-    icon: '/skills/photoshop.png',
-  },
-  {
-    name: 'Blender',
-    icon: '/skills/blender.png',
+    name: 'Java',
+    icon: '/skills/Java.png',
   },
   {
     name: 'VS Code',
@@ -140,40 +142,24 @@ export const skillsData = [
     icon: '/skills/tailwind.png',
   },
   {
-    name: 'Vite',
-    icon: '/skills/vite.png',
+    name: 'Intellij',
+    icon: '/skills/intellij.png',
   },
   {
     name: 'ReactJS',
     icon: '/skills/react.png',
   },
   {
-    name: 'TypeScript',
-    icon: '/skills/ts.png',
+    name: 'Sql',
+    icon: '/skills/sql.png',
   },
   {
-    name: 'AI',
-    icon: '/skills/ai.png',
-  },
-  {
-    name: 'Framer Motion',
-    icon: '/skills/framer.png',
-  },
-  {
-    name: 'ThreeJS',
-    icon: '/skills/threejs.png',
+    name: 'Postgre Sql',
+    icon: '/skills/postgresql.png',
   },
   {
     name: 'NextJS',
     icon: '/skills/nextjs.png',
-  },
-  {
-    name: 'NodeJS',
-    icon: '/skills/nodejs.png',
-  },
-  {
-    name: 'MongoDB',
-    icon: '/skills/mongodb.png',
   },
   {
     name: 'Github',
@@ -232,193 +218,30 @@ export const reviewsData = [
 // Projects
 export const projectsData = [
   {
-    name: 'SparkleGrove.com',
-    desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
+    name: 'Speech-to-Text Audio Transcriber',
+    desc: 'A web application that converts audio files into text using OpenAI APIs. Supports audio upload, real-time transcription, and clean display of results with proper error handling and loading states.',
     url: '/projects/image-1.jpg',
-    tech: ['Figma', 'Photoshop', 'HTML'],
+    tech: ['React', 'Spring Boot', 'OpenAI API', 'Java'],
   },
   {
-    name: 'TechTrekker.net',
-    desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
+    name: 'Spring AI Lab',
+    desc: 'A multi-feature AI application built using Spring Boot that includes chat functionality, a recipe generator, and an image generation tool using AI APIs. Demonstrates integration of multiple AI services in a single platform.',
     url: '/projects/image-2.jpg',
-    tech: ['Figma', 'Photoshop'],
+    tech: ['Spring Boot', 'Java', 'React', 'OpenAI API'],
   },
   {
-    name: 'CozyNestHomes.org',
-    desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
+    name: 'SB E-Commerce Backend',
+    desc: 'A backend application for an e-commerce platform built using Spring Boot, providing RESTful APIs for product management, cart operations, and order processing. Tested using Postman and integrated with a relational database.',
     url: '/projects/image-3.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    tech: ['Java', 'Spring Boot', 'JPA', 'Hibernate', 'MySQL'],
   },
-  {
-    name: 'WanderLuxeTravels.co',
-    desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-    url: '/projects/image-4.jpg',
-    tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
-  },
-  {
-    name: 'ByteBoosters.io',
-    desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-    url: '/projects/image-5.jpg',
-    tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS'],
-  },
-  {
-    name: 'GreenLeafGardens.biz',
-    desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-    url: '/projects/image-6.jpg',
-    tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion'],
-  },
-  {
-    name: 'PixelPerfectDesigns.info',
-    desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-    url: '/projects/image-7.jpg',
-    tech: ['NextJS', 'FramerMotion'],
-  },
-  {
-    name: 'HarmonyHealthHub.com',
-    desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
-    url: '/projects/image-8.jpg',
-    tech: ['NextJS', 'ReactJS', 'FramerMotion'],
-  },
-  {
-    name: 'StellarSkiesAstronomy.org',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-9.jpg',
-    tech: ['ReactJS', 'JavaScript', 'ThreeJS'],
-  },
-  {
-    name: 'UrbanEatsDelights.com',
-    desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-    url: '/projects/image-10.jpg',
-    tech: ['NextJS', 'ThreeJS'],
-  },
-]
+];
 
-export const projectsButton = [
-  'All',
-  'Figma',
-  'Photoshop',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'ReactJS',
-  'TailwindCSS',
-  'NextJS',
-  'FramerMotion',
-  'ThreeJS',
-]
-
-// Pricing Plans
-export const pricingPlans = [
-  {
-    title: 'Basic',
-    pricing: '$500 - $1,000',
-    features: [
-      'Up to 5 pages',
-      'Responsive design ',
-      'Basic SEO ',
-      'Contact form',
-      'Social media links',
-      '1 month support',
-    ],
-    recommended: 'Small businesses, personal websites, bloggers',
-  },
-  {
-    title: 'Premium',
-    pricing: '$5,000 - $10,000',
-    features: [
-      'Unlimited pages',
-      'Responsive design',
-      'Comprehensive SEO',
-      'Contact form ',
-      'Social media links',
-      'Advanced security',
-      'E-commerce (unlimited products)',
-      'Blog setup',
-      'Google Analytics with custom reports',
-      '6 months support',
-    ],
-    recommended: 'Medium-sized businesses, online stores, service providers',
-  },
-  {
-    title: 'Standard',
-    pricing: '$1,500 - $3,000',
-    features: [
-      'Up to 10 pages',
-      'Responsive design',
-      'Advanced SEO',
-      'CContact form',
-      'Social media links',
-      'E-commerce (20 products)',
-      'Blog setup',
-      'Google Analytics',
-      '3 months support',
-    ],
-    recommended: 'Large businesses, complex e-commerce sites, custom web applications',
-  },
-]
 
 import CheckLineIcon from 'remixicon-react/CheckLineIcon'
 
 export const checkIcon = <CheckLineIcon />
 
-// Q & A
-export const questions = [
-  {
-    question: 'How much do you charge for a website?',
-    answer:
-      'Our website packages usually range from £2997 – £4997. However it really depends on what kind of website you need. We recently wrote a full guide on how much it costs for a website to give you an idea of the different options available.',
-  },
-  {
-    question: 'Why are you so expensive?',
-    answer:
-      'he process we use to build your website takes a certain amount of time and a lot of planning and research. Unlike other agencies, we DON’T use templates. We build your website from scratch, which means you get a unique design tailored around your business. Buying a website from us should not just simply be seen as a business expense as your website is a sales tool that should earn you money',
-  },
-  {
-    question: 'How long does it take to build a website?',
-    answer:
-      'It takes approximately 6-10 weeks to build a website from start to finish, providing we have all the information from you. Our full web design process is broken down here. Generally speaking, the website will only take a long time if we are still waiting for text and images from yourself.',
-  },
-  {
-    question: 'How do we communicate throughout the website build?',
-    answer:
-      'Before we begin working together, we’ll usually have an initially chat on the phone or via Skype to discuss the project. Once we get started, most of the communication will take place over email. This makes the process a lot easier as we’ll have all of the information saved and can come back to it later. Once we’ve finished the project, we will book in your 1hr digital marketing training session.',
-  },
-  {
-    question: 'What will you need from me?',
-    answer:
-      'It really depends on what type of website you want. We’ll be able to discuss this on our discovery call before we start working together. Depending on which package we agree on we could need…',
-  },
-  {
-    question: 'What if I don’t like the website?',
-    answer:
-      'You’re in luck. We offer a risk-free guarantee. Before we build your new website, we’ll design a mockup of your homepage. We’ll design a layout in Photoshop first, that way you’ll get to see our initial designs within approximately ten days. This is your opportunity to give us feedback and if you really don’t like it, you don’t have to move forward. Best part is, this won’t cost you anything.',
-  },
-  {
-    question: 'Do you offer a payment schedule?',
-    answer:
-      'Yes, we split the payment into two. The first 50% is usually taken once you have seen the mockup of your homepage and you’re happy to move forward. The following 50% is taken 30 days after this.',
-  },
-  {
-    question: 'Can I make the final payment when the site is ready to go live?',
-    answer:
-      'No. In the past we have found that projects can take a lot longer than expected to complete. We might be waiting for information from you and this can delay the process. Sometimes these delays can take months. This is why we always invoice 30 days after the original payment. At this point we’ll be well on our way with your new website and you’ll be able to see the progress.',
-  },
-  {
-    question: 'Who hosts the website?',
-    answer:
-      'If we build your website, we will generally manage the hosting for you so you don’t need to do anything. We use the same hosting company for our own website and for ALL our clients. Each website is managed individually to avoid any security issues. Every website we build has unlimited bandwidth, 20GB of disk space, 2GB Ram and 99.9% uptime. We’ve used the same company for 5 years and we don’t plan on changing this anytime soon.',
-  },
-  {
-    question: 'Can I update the website myself once it’s been built?',
-    answer:
-      'Yes. We like to offer the ability for our clients to update the website themselves. We we’ll give you all the training and tools to be able to make website amendments. We use a easy to use platform called WordPress so you can add edit and delete content without paying us to do it for you.',
-  },
-  {
-    question: 'What if I don’t want to manage the website at all. Can you do it all for me?',
-    answer:
-      'Yes, we can arrange a maintenance package to suit your needs. This can range from 1hr per month to 10 hours per month and we can discuss a package that’s right for you.',
-  },
-]
 
 import ArrowDropDownLineIcon from 'remixicon-react/ArrowDropDownLineIcon'
 export const questionArrow = <ArrowDropDownLineIcon />
@@ -434,9 +257,6 @@ import HistoryLineIcon from 'remixicon-react/HistoryLineIcon'
 import BriefcaseLineIcon from 'remixicon-react/BriefcaseLineIcon'
 import UserStarLineIcon from 'remixicon-react/UserStarLineIcon'
 import ProjectorLineIcon from 'remixicon-react/ProjectorLineIcon'
-import PriceTag3LineIcon from 'remixicon-react/PriceTag3LineIcon'
-import ContactsBook2LineIcon from 'remixicon-react/ContactsBook2LineIcon'
-import QuestionAnswerLineIcon from 'remixicon-react/QuestionAnswerLineIcon'
 
 export const navbarData = [
   {
@@ -468,21 +288,6 @@ export const navbarData = [
     id: 'projects',
     name: 'Projects',
     icon: <ProjectorLineIcon />,
-  },
-  {
-    id: 'pricing',
-    name: 'Pricing',
-    icon: <PriceTag3LineIcon />,
-  },
-  {
-    id: 'contact',
-    name: 'Contact',
-    icon: <ContactsBook2LineIcon />,
-  },
-  {
-    id: 'questions',
-    name: 'Questions',
-    icon: <QuestionAnswerLineIcon />,
   },
 ]
 

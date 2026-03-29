@@ -7,7 +7,6 @@ import { useState } from 'react'
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({ innerWidth: 0, innerHeight: 0 })
   const [mouseMove, setMouseMove] = useState(false)
-  const [buttonHover, setButtonHover] = useState(false)
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
@@ -63,21 +62,16 @@ const Hero = () => {
             <motion.span
               className="absolute text-3xl font-semibold text-white"
               initial={{ scale: 0 }}
-              animate={{
-                opacity: buttonHover ? 0 : 1,
-                scale: buttonHover ? 2 : 0,
-                y: buttonHover ? -40 : 0,
-              }}
               transition={{ opacity: { delay: 0.4 } }}
             >
               Hi
             </motion.span>
           </motion.div>
           <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
-            My Name is Nick Brown &
+            My Name is Gary Meledath &
           </h1>
           <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 transition-colors">
-            I like animations 🤗
+            {`I’m a software developer by choice and a vagabond at heart.`}
           </p>
         </motion.div>
         <motion.div
@@ -96,17 +90,7 @@ const Hero = () => {
             </a>
           ))}
         </motion.div>
-        <motion.a
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.7 }}
-          href="#"
-          className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
-          onMouseEnter={() => setButtonHover(true)}
-          onMouseLeave={() => setButtonHover(false)}
-        >
-          Talk to me
-        </motion.a>
+
       </div>
     </div>
   )

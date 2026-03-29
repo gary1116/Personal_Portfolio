@@ -12,13 +12,13 @@ const Project = ({ data, index }) => {
       viewport={{ once: true }}
       transition={{ duration: 1, type: 'spring', stiffness: 100 }}
       onClick={() => setShow((show) => !show)}
-      className="relative w-[350px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer"
+      className="relative w-[400px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer"
     >
       <Image
         src={data.url}
         alt="Project Image"
-        width={400}
-        height={400}
+        width={500}
+        height={500}
         className="rounded-lg opacity-70"
       />
       <motion.div

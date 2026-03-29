@@ -1,9 +1,8 @@
 'use client'
 
 import Heading from './sub/Heading'
-import Achievements from './sub/Achievements'
 import Image from 'next/image'
-import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from '@/assets'
+import { aboutText, downloadIcon, arrowLeftIcon } from '@/assets'
 
 const About = () => {
   return (
@@ -25,7 +24,7 @@ const About = () => {
             {aboutText}
           </p>
           <a
-            href="/nick-cv.pdf"
+            href="/Gary_Meledath_Resume.pdf"
             download=""
             className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 font-light text-white hover:bg-red-500 transition-colors"
           >
@@ -33,13 +32,6 @@ const About = () => {
             <span className="text-xl">{downloadIcon}</span>
           </a>
         </div>
-      </div>
-      <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
-        {aboutData.map((item, i) => (
-          <Achievements key={i} title={item.title} amount={item.amount}>
-            {item.icon}
-          </Achievements>
-        ))}
       </div>
     </div>
   )
