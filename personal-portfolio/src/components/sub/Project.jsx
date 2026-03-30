@@ -13,8 +13,8 @@ const Project = ({ data, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1, type: 'spring', stiffness: 100 }}
-      onClick={() => setShow((show) => !show)}
-      className="relative w-[450px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer"
+      onClick={() => setShow((prev) => !prev)}
+      className="relative w-full max-w-[400px] overflow-hidden rounded-lg border border-yellow-400 cursor-pointer"
     >
       <Image
         src={data.url}
@@ -27,23 +27,24 @@ const Project = ({ data, index }) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: show ? 1 : 0 }}
-        className="absolute top-0 w-full h-full flex flex-col items-center justify-center gap-y-3 bg-white/95 p-6 rounded-lg dark:bg-zinc-700/95 transition-colors"
+        className={`absolute inset-0 z-10 flex flex-col rounded-lg bg-white/95 p-4 sm:p-6 dark:bg-zinc-700/95 transition-colors ${
+          show ? 'pointer-events-auto' : 'pointer-events-none'
+        }`}
       >
-        <h2 className="text-lg sm:text-sm font-bold tracking-wide text-gray-500 dark:text-white transition-colors">
+        <h2 className="mb-2 text-base sm:text-lg font-bold tracking-wide text-gray-600 dark:text-white break-words text-center">
           {data.name}
         </h2>
 
-        <p className="text-justify sm:text-sm text-gray-500 first-letter:pl-2 dark:text-gray-100 transition-colors">
+        <p className="flex-1 overflow-y-auto text-sm sm:text-base text-left break-words text-gray-600 dark:text-gray-100">
           {data.desc}
         </p>
 
-        {/* ✅ GitHub Button */}
         <a
           href={data.github}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()} // VERY IMPORTANT
-          className="flex items-center gap-2 mt-2 px-4 py-2 bg-black text-white rounded hover:bg-yellow-500 hover:text-black transition"
+          onClick={(e) => e.stopPropagation()}
+          className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded bg-black px-4 py-2 text-sm sm:text-base text-white transition hover:bg-yellow-500 hover:text-black"
         >
           <GithubLineIcon />
           View Code
